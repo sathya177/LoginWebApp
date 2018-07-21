@@ -19,8 +19,7 @@
   - name: Wait until the webapp folder {{ webapp_destination_folder }}\{{ warName }} is deleted
     path: "{{ webapp_destination_folder }}\\{{ webapp_name }}xxx"
     state: absent
-    register: folder_info
 
   - name: rename the {{ webapp_name }}.war.tmp to {{ webapp_name }}.war
     command: "mv {{ webapp_destination_folder }}\\{{ warName }}.war.tmp {{ warName }}.war"
-    register: cmd_result
+  
