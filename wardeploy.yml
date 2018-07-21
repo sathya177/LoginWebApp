@@ -1,0 +1,26 @@
+### This play deploys a webapp war to an tomcat server
+
+--
+- hosts: tomcatServer
+  vars:
+  - warName: LoginWebApp.war
+  - webapp_destination_folder: /var/lib/tomcat8/webapps
+
+  tasks:
+  - name: Copy the war file {{ warName }}.war as {{ warName }}.war.tmp to {{ webapp_destination_folder }}
+    src: ${WORKSPACE}/target/{{ webapp_name }}.war
+    dest: "{{ webapp_destination_folder }}\\{{ warName }}.war.tmp"
+    force: yes 
+
+  - name: Remove current war file {{ webapp_destination_folder }}\{{ warName }}.war
+    path: "{{ webapp_destination_folder }}\\{{ warName }}.war"
+    state: absent
+
+  - name: Wait until the webapp folder {{ webapp_destination_folder }}\{{ warName }} is deleted
+    path: "{{ webapp_destination_folder }}\\{{ webapp_name }}xxx"
+    state: absent
+    register: folder_info
+
+  - name: rename the {{ webapp_name }}.war.tmp to {{ webapp_name }}.war
+    command: "mv {{ webapp_destination_folder }}\\{{ warName }}.war.tmp {{ warName }}.war"
+    register: cmd_result
