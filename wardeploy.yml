@@ -1,6 +1,9 @@
-- hosts: appdeploy  
-  gather_facts: false  
-  sudo: true  
-  tasks:    
+- hosts: appdeploy
+  user: root
+  #user: ubuntu
+  #become_user: sudo
+  gather_facts: false
+ sudo: true
+  tasks:
   - name: Deploy App      
-    copy: src=/var/lib/jenkins/jobs/workspace/loginwebapp/target/LoginWebApp.war dest="/var/lib/tomcat8/webapps/ LoginWebApp.war" owner=tomcat group=tomcat
+    copy: src="/var/lib/jenkins/jobs/workspace/loginwebapp/target/LoginWebApp.war" dest="/var/lib/tomcat8/webapps/LoginWebApp.war" owner=tomcat group=tomcat
