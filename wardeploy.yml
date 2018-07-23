@@ -6,4 +6,4 @@
  sudo: true
   tasks:
   - name: Deploy App      
-    copy: src="/var/lib/jenkins/jobs/workspace/loginwebapp/target/LoginWebApp.war" dest="/var/lib/tomcat8/webapps/LoginWebApp.war" owner=tomcat group=tomcat
+    copy: src="/var/lib/jenkins/jobs/workspace/loginwebapp/target/LoginWebApp.war" dest="/var/lib/tomcat8/webapps/LoginWebApp.war"
