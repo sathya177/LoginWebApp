@@ -1,5 +1,6 @@
 - hosts: tomcatserver
-  user: root
+  user: jenkins
+  become_user: sudo
   gather_facts: false
   become: true
   tasks:
