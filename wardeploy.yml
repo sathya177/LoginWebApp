@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: tomcatserver
   user: root
   #become_user: sudo
   gather_facts: false
