@@ -1,2 +1,2 @@
 [tomcatserver]
-localhost ansible_user=saravanan
+localhost ansible_user=root
