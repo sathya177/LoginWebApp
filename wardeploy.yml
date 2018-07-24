@@ -1,6 +1,6 @@
 - hosts: localhost
-  user: saravanan
-  become_user: sudo
+  user: root
+  #become_user: sudo
   gather_facts: false
   become: true
   tasks:
