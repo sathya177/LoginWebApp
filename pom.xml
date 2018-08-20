@@ -32,14 +32,12 @@
 	<repository>
 	<id>releases</id>
 	<name>Releases</name>
-	<version>2.5</version>
 	<url>http://35.200.137.36:8081/repository/releases/</url>
 	</repository>
 	
 	<snapshotRepository>
 	<id>snapshots</id>
 	<name>Snapshots</name>
-	<version>2.5</version>
 	<url>http://35.200.137.36:8081/repository/snapshots/</url>
 	</snapshotRepository>
 	
