@@ -25,51 +25,21 @@
 		</dependency>
 	</dependencies>
 	<build>
-        <finalName>LoginWebApp</finalName>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <version>2.7</version>
-           <configuration>
-	      <formats>  
-                    <format>xml</format>  
-               </formats> 
-          </configuration>
-       </plugin>
-      </plugins>
-      </build>
+		<finalName>LoginWebApp</finalName>
+	</build>
 	
 	<distributionManagement>
 	<repository>
 	<id>releases</id>
 	<name>Releases</name>
-	<url>http://35.200.215.0:8081/repository/releases/</url>
+	<url>http://35.200.137.36:8081/repository/releases/</url>
 	</repository>
 	
 	<snapshotRepository>
 	<id>snapshots</id>
 	<name>Snapshots</name>
-	<url>http://35.200.215.0:8081/repository/snapshots/</url>
+	<url>http://35.200.137.36:8081/repository/snapshots/</url>
 	</snapshotRepository>
 	
 	</distributionManagement>
-<reporting>
-    <plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <version>2.7</version>
-            <configuration>
-                 <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>cobertura</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </configuration>
-        </plugin>
-    </plugins>
-  </reporting> 
 </project>
