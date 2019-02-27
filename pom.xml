@@ -42,7 +42,6 @@
 	      <phase>package</phase>
               <goals>
 		<goal>cobertura</goal>
-		<goal>report</goal>
              </goals>
            </execution>
          </executions>
