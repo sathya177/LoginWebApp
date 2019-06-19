@@ -54,6 +54,7 @@
          <connection>scm:git:https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Saravananmoorthy/LoginWebApp.git</connection>
 	 <url>http://github.com/Saravananmoorthy/LoginWebApp</url>
         <developerConnection>scm:git:https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Saravananmoorthy/LoginWebApp.git</developerConnection>
+	<tag>maven-release</tag>
    </scm>
     <profiles>
    <profile>
