@@ -33,7 +33,6 @@
                <configuration>
                    <tagNameFormat>v@{project.version}</tagNameFormat>
                    <autoVersionSubmodules>true</autoVersionSubmodules>
-		    <releaseProfiles>releases</releaseProfiles>
                </configuration>
          </plugin>
         </plugins>
@@ -51,32 +50,5 @@
         <developerConnection>scm:git:https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Saravananmoorthy/LoginWebApp.git</developerConnection>
      <tag>v1.21</tag>
   </scm>
-    <profiles>
-   <profile>
-      <id>releases</id>
-      <build>
-         <plugins>
-            <plugin>
-               <groupId>org.sonatype.plugins</groupId>
-               <artifactId>nexus-staging-maven-plugin</artifactId>
-               <version>1.5.1</version>
-               <executions>
-                  <execution>
-                     <id>default-deploy</id>
-                     <phase>deploy</phase>
-                     <goals>
-                        <goal>deploy</goal>
-                     </goals>
-                  </execution>
-               </executions>
-               <configuration>
-                  <serverId>nexus-releases</serverId>
-                  <nexusUrl>http://cape-app.southeastasia.cloudapp.azure.com:8000/</nexusUrl>
-               </configuration>
-            </plugin>
-         </plugins>
-      </build>
-   </profile>
-</profiles>
  
 </project>
