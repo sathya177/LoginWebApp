@@ -43,11 +43,11 @@
    <distributionManagement>
       <repository>
          <id>nexus-releases</id>
-         <url>http://cape-app.southeastasia.cloudapp.azure.com:8000/repository/LoginWebApp/</url>
+         <url>http://cape-app.southeastasia.cloudapp.azure.com:8000/repository/LoginWebApp</url>
       </repository>
       <snapshotRepository>
             <id>nexus-releases</id>
-            <url>http://cape-app.southeastasia.cloudapp.azure.com:8000/repository/LoginWebApp/</url>
+            <url>http://cape-app.southeastasia.cloudapp.azure.com:8000/repository/LoginWebApp</url>
       </snapshotRepository>
    </distributionManagement>
    <scm>
