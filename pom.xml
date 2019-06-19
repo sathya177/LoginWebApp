@@ -44,7 +44,11 @@
       <repository>
          <id>nexus-releases</id>
          <url>http://cape-app.southeastasia.cloudapp.azure.com:8000/repository/LoginWebApp/</url>
-   </repository>
+      </repository>
+      <snapshotRepository>
+            <id>nexus-releases</id>
+            <url>http://cape-app.southeastasia.cloudapp.azure.com:8000/repository/LoginWebApp/</url>
+      </snapshotRepository>
    </distributionManagement>
    <scm>
          <connection>scm:git:https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Saravananmoorthy/LoginWebApp.git</connection>
@@ -71,7 +75,7 @@
                <configuration>
                   <serverId>nexus-releases</serverId>
                   <nexusUrl>http://cape-app.southeastasia.cloudapp.azure.com:8000</nexusUrl>
-                  <skipStaging>true</skipStaging>
+                  <skipStaging>false</skipStaging>
                </configuration>
             </plugin>
          </plugins>
