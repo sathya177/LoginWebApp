@@ -75,7 +75,7 @@
                </executions>
                <configuration>
                   <serverId>nexus-releases</serverId>
-                  <nexusUrl>http://cape-app.southeastasia.cloudapp.azure.com:8000</nexusUrl>
+                  <nexusUrl>http://cape-app.southeastasia.cloudapp.azure.com:8000/</nexusUrl>
                </configuration>
             </plugin>
          </plugins>
