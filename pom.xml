@@ -45,9 +45,9 @@
       </repository>
    </distributionManagement>
    <scm>
-         <connection>scm:git:https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Saravananmoorthy/LoginWebApp.git</connection>
+         <connection>scm:git:https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/sathya177/LoginWebApp.git</connection>
 	 <url>http://github.com/Saravananmoorthy/LoginWebApp</url>
-        <developerConnection>scm:git:https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Saravananmoorthy/LoginWebApp.git</developerConnection>
+        <developerConnection>scm:git:https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/sathya177/LoginWebApp.git</developerConnection>
      <tag>v1.43</tag>
   </scm>
  
